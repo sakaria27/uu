@@ -40,16 +40,16 @@
     </nav>
 
     <section>
-      <h2>Viktig beskjed: Les dette! Klikk her! Klikk her! Klikk her! Veldig viktig!</h2>
+      <h2><a href="#">Les mer her for viktig informasjon ang eksamen</a></h2>
     </section>
 
       <aside>
         <section>
           <h4>Nyheter</h4> <!-- bevisst: hopper over h1/h2/h3 -->
-          <p>
+          <article>
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt=""> <!-- bevisst: tom alt på meningsbærende bilde -->
             <a class="tiny-link" href="#">Klikk her</a> for å lese mer om ting.
-          </p>
+        </article>
           <p class="status-ok">Tilgjengelig</p>
           <p class="status-bad">Utilgjengelig</p>
         </section>
@@ -57,10 +57,10 @@
 
       <section>
         <h4>Språk</h4>
-        <p>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Norway.svg" alt="no"> <!-- bevisst: alt «no» er ikke beskrivende -->
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg" alt="en">
-        </p>
+        <ul>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Norway.svg" alt="Norsk flagg" title="Norsk bokmål"></li> <!-- bevisst: alt «no» er ikke beskrivende -->
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg" alt="UK flagg" title="Engelsk"></li>
+        </ul>
       </section>
         
       <main>
@@ -71,7 +71,7 @@
         <section>
             <h2>Denne teksten er veldig vanskelig å lese fordi den er smal, i store bokstaver og har lav kontrast. Den er også justert med blokkjustering som kan skape store mellomrom i linjene. Klikk her for mer info.</h2>
 
-          <div class="card form">
+          <article>
             <h4>Kontakt oss</h4>
             <!-- bevisst: ingen <label> og kun placeholder, dupliserte id-er, dårlig kontrast, farge som eneste signal -->
             <form>
@@ -99,39 +99,56 @@
               <p class="error">skjemaet er feil utfylt</p> <!-- bevisst: lav kontrast på feilmelding, små bokstaver -->
               <input type="submit" value="Send"> <!-- bevisst: span som knapp, positiv tabindex -->
             </form>
-          </div>
+          </article>
 
-          <div class="card weird-order">
+          <article>
             <h4>Mer innhold</h4>
-            <p>
-              <a href="#" tabindex="3">Les mer</a> |
-              <a href="#" tabindex="1">Klikk her</a> |
-              <a href="#" tabindex="2">Trykk her</a>
-            </p>
-            <p>
-              <span class="btn" tabindex="4">Primær handling</span>
-            </p>
-          </div>
+            <ol>
+              <li><a href="#" >Les mer om eksamensoppgave 1</a></li> |
+              <li><a href="#" >Mer informasjon om eksamensoppgave 2 finner du her</a></li>|
+              <li><a href="#" >informasjon om eksamensoppgave 3 blir publisert</a></li>
+            </ol>
+            <button>Start eksamen</button>
+          </article>
 
-          <div class="card">
+          <article>
             <h4>Tabell uten overskrifter</h4>
             <table>
-              <tr><td>1</td><td>2</td><td>3</td></tr>
-              <tr><td>4</td><td>5</td><td>6</td></tr>
-              <tr><td>7</td><td>8</td><td>9</td></tr>
+              <tbody>
+              <tr>
+                <th>Kolonne 1</th>
+                <th>Kolonne 2</th>
+                <th>Kolonne 3</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+              </tr>
+              </tbody>
             </table>
-          </div>
+          </article>
 
-          <div class="card">
+          <article>
             <h4>Masse lenker med samme tekst</h4>
             <ul>
-              <li><a href="#">Les mer</a></li>
-              <li><a href="#">Les mer</a></li>
-              <li><a href="#">Les mer</a></li>
-              <li><a href="#">Les mer</a></li>
+              <li><a href="#">Oppgave om UU</a></li>
+              <li><a href="#">Oppgave om SEO</a></li>
+              <li><a href="#">Oppgave om Semantiskk HTML</a></li>
+              <li><a href="#">Oppgave om CSS Grid og flex</a></li>
             </ul>
           </div>
-        </section>
+          </article>
       </main>
 
     <footer>

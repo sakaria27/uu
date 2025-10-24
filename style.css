@@ -6,3 +6,7 @@ body{
   color: #000;
   font-family: 'Arial', sans-serif;
 }
+
+a{
+  padding: 1rem;
+}
